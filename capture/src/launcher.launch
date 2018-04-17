@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="capture" 
+            type="publish.py" 
+            name="publisher_node" 
+            output="screen"> </node>
+    
+    <node pkg="capture"
+            type="subscribe.py"
+            name="subscriber_node" 
+            output="screen"> </node>
+</launch>
